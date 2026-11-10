@@ -11,13 +11,14 @@ test('LOGIN-001 Login with valid credentials',async ({page})=>{
     
 });
 
-     test('LOGIN-002 Login with invalid credentials', async ({page})=>{
+test('LOGIN-002 Login with invalid credentials', async ({page})=>{
+    
      await page.goto('https://www.saucedemo.com/'); 
      await expect(page).toHaveURL('https://www.saucedemo.com/')
      
 });
 
-test('LOGIN-001 Login with valid credentials',async ({page})=>{
+test('LOGIN-003 Login with valid credentials',async ({page})=>{
 
     await page.goto('https://www.saucedemo.com/');
     await page.locator('//*[@id="user-name"]').fill('standard_user');
