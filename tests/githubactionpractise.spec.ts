@@ -9,6 +9,7 @@ test('LOGIN-001 Login with valid credentials',async ({page})=>{
     // After your login steps complete:
     await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html')
     
+    await expect(page.locator('//*[@id="header_container"]/div[2]/span')).toHaveText('Products');
 });
 
 test('LOGIN-002 Login with invalid credentials', async ({page})=>{
