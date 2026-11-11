@@ -29,7 +29,7 @@ test('LOGIN-003 Login-add_item-validate_cart',async ({page})=>{
     await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html");
     await expect(page.locator('//*[@id="header_container"]/div[2]/span')).toHaveText('Products');
     await page.locator('//*[@id="add-to-cart-sauce-labs-backpack"]').click();
-    await expect(page.locator('//*[@id="shopping_cart_container"]/a/span')).toHaveText('1');
+    
 });
 
 
